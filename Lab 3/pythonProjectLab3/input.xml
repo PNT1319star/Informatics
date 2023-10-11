@@ -1,0 +1,19 @@
+<root>
+    <group>P3121</group>
+    <tuesday>
+        <lesson_1>
+            <name>Математический Анализ(Лек)</name>
+            <time>08:20-09:50</time>
+            <audience>ауд.Orange Classroom (1229)</audience>
+            <place>Кронверкский пр., д.49, лит.А</place>
+            <teacher>Правдин Константин Владимирович</teacher>
+        </lesson_1>
+        <lesson_2>
+            <name>Математический Анализ(Прак)</name>
+            <time>10:00-11:30</time>
+            <audience>ауд. 2416</audience>
+            <place>	Кронверкский пр., д.49, лит.А</place>
+            <teacher>Правдин Константин Владимирович</teacher>
+        </lesson_2>
+    </tuesday>
+</root>
