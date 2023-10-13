@@ -1,5 +1,4 @@
 import re
-
 def countSmileys(text):
     pattern = r'X<{P'
     matches = re.findall(pattern, text)
@@ -10,8 +9,9 @@ text1 = "Привет! X<{P X<{P X<{P"
 text2 = "Здравствуйте! Это X<{P>"
 text3 = "X<X>X<X<X>X<{P}"
 text4 = "Доброе утро X<{P>. Сегодня я себя чувствую очень хорошо X<{P>"
-text5 = "X<{P>"
-ans=[3,1,1,2,1] #Ожиданные ответы
+text5 = "Hello world X<{P>"
+#Ожиданные ответы
+ans=[3,1,1,2,1]
 # функция для проверки
 def validate(texts_to_validate, ans):
     for i in range(len(texts_to_validate)):
