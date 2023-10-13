@@ -26,6 +26,6 @@ output(text1,replaced_text1)
 output(text2,replaced_text2)
 output(text3,replaced_text3)
 output(text4,replaced_text4)
-#Дополнетельное задание 2
+
 
 
