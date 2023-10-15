@@ -10,5 +10,5 @@ with open('./input.xml', 'r', encoding='utf-8') as f:
 
 res = parser(s)
 
-with open('output3.yaml', 'w', encoding='utf-8') as f:
+with open('output_with_re.yaml', 'w', encoding='utf-8') as f:
     f.write(res)
