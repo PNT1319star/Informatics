@@ -37,5 +37,6 @@ with open('./output.yaml', 'r', encoding='utf-8') as f:
 
 line = emptyLine(y)
 
+
 with open('output.yaml', 'w', encoding='utf-8') as f:
     f.write(line)
