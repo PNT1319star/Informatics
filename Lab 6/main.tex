@@ -1,0 +1,36 @@
+\documentclass[10pt,a4paper]{article} 
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{changepage}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning}
+\usepackage[letterspace=150]{microtype}
+\usepackage{multicol}
+\usepackage[inner=0.25in,outer=0.25in,tmargin=2cm,footskip=.1in]{geometry}
+\setlength{\columnsep}{0.4cm}
+
+\usepackage{titleps}
+\newpagestyle{main_title}{
+	\sethead{}{}{}            
+	\setfoot{}{}{} 
+}
+\usepackage{graphicx}
+\usepackage{titleps}
+\newpagestyle{main}{
+    \sethead{64}{\textbf{КВАНТ}. 2010/№2}{}
+}
+\newpagestyle{task2}{}
+\begin{document}
+    \input{title.tex}
+    \input{table of content}
+    \input{task}
+    \normalsize\input{page.tex}
+    \Large\input{task 2}
+    
+\end{document}

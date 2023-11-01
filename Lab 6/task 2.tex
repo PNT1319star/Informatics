@@ -1,0 +1,37 @@
+\pagestyle{task2}
+
+\textbf{Задание 2:}\\
+\\
+\\
+\begin{center}
+
+\begin{tikzpicture}
+    % Определение состояний
+    \node[state] (b1) {$b_1$};
+    \node[state, right=3cm of b1] (b2) {$b_2$};
+    \node[state, right=3cm of b2] (b3) {$b_3$};
+    \node[state, below=3cm of b1] (b4) {$b_4$};
+    \node[state, right=3cm of b4] (b5) {$b_5$};
+    \node[state, right=3cm of b5] (b6) {$b_6$};
+    % Определение переходов
+    \draw[->, shorten >=2pt] (b1) edge [loop left] node {z1} (b1);
+    \draw[->, shorten >=2pt] (b1) -- node[midway,above] {z3} (b2);
+    \draw[->, shorten >=2pt] (b2) edge [loop above] node {z2} (b2);
+    \draw[->, shorten >=2pt] (b3) -- node[midway,above] {z2} (b2);
+    \draw[->, shorten >=2pt] (b4) -- node[midway,left] {z1} (b1);
+    \draw[->, shorten >=2pt] (b5) -- node[midway,below] {z2} (b4);
+    \draw[->, shorten >=2pt] (b4) edge [loop left] node {z3} (b4);
+    \draw[->, shorten >=2pt] (b6) edge [bend left] node[midway,below] {z2} (b4);
+    \draw[->, shorten >=2pt] (b1) -- node[midway,right] {z2} (b5);
+    \draw[->, shorten >=2pt] (b2) -- node[pos=0.25,right] {z1} (b6);
+    \draw[->, shorten >=2pt] (b5) -- node[pos=0.25,left] {z3} (b3);
+    \draw[->, shorten >=2pt] (b6) -- node[midway,left] {z3} (b3);
+    \draw[->, shorten >=2pt] (b3) edge [bend left] node[midway,right] {z1} (b6);
+    
+    
+\end{tikzpicture}
+\end{center}
+\section{Вывод:}
+В процессе выполнения задания я познакомился с языком LaTeX и понял, как его использовать на практике. Я научился писать математические формулы, создавать таблицы и вставлять изображения в файлы с помощью LaTeX. Использование LaTeX помогло мне создавать документы, которые выглядят профессионально, их легко редактировать и форматировать.
+\section{Список литературы:}
+[1] The Not So Short Introduction to LaTeX2$\epsilon$ /Tobias Oetiker, Hubert Partl, Irene Hyna,Elisabeth Schlegl
