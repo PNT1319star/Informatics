@@ -264,13 +264,14 @@ print("\n")
 select_reviews_for_author = """
 SELECT *
 FROM reviews
-WHERE book_id IN (SELECT id FROM books WHERE author_id = (SELECT id FROM authors WHERE name = 'George Orwell'));
+WHERE book_id IN (SELECT id FROM books WHERE author_id = (SELECT id FROM authors WHERE name = 'George Orwell' LIMIT 1));
 """
 reviews_for_author = execute_read_query(connection, select_reviews_for_author)
 print("Reviews for Books by George Orwell:")
 for review in reviews_for_author:
     print(review)
 print("\n")
+
 #======================================================================================================================
 # UNION Query 1
 select_union_query_1 = """
